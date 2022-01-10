@@ -1,0 +1,113 @@
+div {
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+}
+.linear-gradient-default {
+  background-image: linear-gradient(blue, orange);
+}
+.linear-gradient-to-right {
+  background-image: linear-gradient(to right, blue, orange);
+}
+/* diagonal -using vertical and horizontal position */
+.linear-gradient-diagonal {
+  background-image: linear-gradient(to left bottom, green, red);
+}
+/* diagonal -using angles */
+.linear-gradient-diagonal-angles {
+  background-image: linear-gradient(50deg, red, orange);
+}
+.linear-gradient-transparency {
+  background-image: linear-gradient(
+    135deg,
+    rgba(0, 255, 0, 1),
+    rgba(0, 255, 0, 0)
+  );
+}
+.repeating-linear-gradient {
+  background-image: repeating-linear-gradient(tomato, orange 16.6%, red 33.3%);
+}
+.radial-gradient-default {
+  background-image: radial-gradient(red, green, blue);
+}
+.radial-gradient-differently-spaced {
+  background-image: radial-gradient(yellow 10%, black 20%, orange 40%);
+}
+.radial-gradient-set-shape {
+  background-image: radial-gradient(circle, yellow 10%, black 20%, orange 40%);
+}
+.radial-gradient-center {
+  background-image: radial-gradient(farthest-side at 20% 10%, red, green);
+}
+.repeating-radial-gradient-size-center {
+  background-image: repeating-radial-gradient(
+    closest-corner at 40% 40%,
+    green,
+    yellow 30%,
+    orange 50%
+  );
+}
+.conic-gradient {
+  height: 500px;
+  border-radius: 50%;
+  background-image: conic-gradient(
+    from 65deg,
+    skyblue 45deg,
+    royalblue 45deg,
+    royalblue 360deg
+  );
+}
+.repeating-conic-gradient {
+  height: 500px;
+  border-radius: 50%;
+  background-image: repeating-conic-gradient(
+    from 45deg at 60% 50%,
+    skyblue 10%,
+    royalblue 15%
+  );
+}
+
+.parent {
+  position: relative;
+}
+.image {
+  display: block;
+  width: 800px;
+  height: 250px;
+  /* border: 1px solid green; */
+}
+.image img {
+  width: 50%;
+}
+#ring {
+  position: sticky;
+  top: 20px;
+  left: 150px;
+}
+
+#table {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+table,
+th,
+td {
+  border: 1px solid royalblue;
+  margin: 0;
+  border-collapse: collapse;
+  font-size: 30px;
+  border-spacing: 10px; /* Won't work because of border-collaps: collapse */
+}
+table {
+  margin: auto 0;
+  background-color: royalblue;
+  border-radius: 20px;
+}
+th,
+td {
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background: skyblue;
+}
